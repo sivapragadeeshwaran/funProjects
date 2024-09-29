@@ -1,0 +1,234 @@
+</html><!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  .overview{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    }
+  .front-container{
+    width: 200px;
+    height: 320px;
+    border-radius: 50% 50% 25% 25% / 60% 60%  ;
+    background-color: rgb(242,94,163);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  }
+  .back-container{
+    width: 200px;
+    height: 320px;
+    border-radius: 25% 25% 50% 50% / 60% 60%  ;
+     background-color: rgb(242,94,163);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .middle-container{
+    width: 65%;
+    height: 10px;
+    margin-left:34px;
+    background-color: #F7B9D7;
+    border-radius:4px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    
+  }
+    .image-block{
+      width:60%;
+      height: 210px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      margin-top:45px;
+      border-radius: 25%;
+      border:4px solid white;
+       overflow: hidden;
+    }
+    .image-block img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25%;
+    }
+    .block{
+     display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+    .symbol{
+      width: 50px;
+      height: 40px;
+      margin: auto;
+      margin-top: 0px;
+    }
+    .button-block{
+      padding-top:15px;
+      width: 75%;
+      height: 70%;
+      margin: 30px 20px;
+      background-color:white ;
+      border-radius: 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .block2{
+      width:100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .button1{
+      margin-top:3px;
+      margin-bottom: 0px;
+      width: 90%;
+      height: 60%;
+      background-color: ;
+      text-align: center;
+      border-radius: 10px;
+      padding-top:0px;
+      display:flex;
+      justify-content: space-between;
+      align-content: center;
+      gap: 0px;
+     }
+    .button1 button{
+      background-color:#F7B9D7;
+      width: 30%;
+      height: 70%;
+      margin-top: 0px;
+      border: none;
+      color:#3c373cbf;
+      border-radius:17px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .audiobtn{
+       transition:transform 1s ;
+    }
+    .audiobtn:active{
+      transform:scale(0.1);
+    }
+  </style>
+  </head>
+  <body>
+    <div class="overview">
+      <div>
+    <div class="front-container">
+      <div class="block">
+         <div class="image-block">
+          <img class="image" src="img/lufi.jpg">
+         <video id="myvideo" muted
+       style="width:100%; height:100%; object-fit:fill;" >
+</video>
+          
+         </div>
+      </div>
+      <div class="symbol">
+        <img id="image1" src="img/Animation - 1727421066571.gif" style="width:45px;height:55px;margin-left:5px;" />
+        <img id="image2" src="img/Animation - 1727421066571.gif" style="width:40px;height:40px;margin-left:5px; display:none">
+
+      </div>
+      
+    </div>
+    <div class="back-container">
+      <div class="middle-container">
+      </div>
+      <div class="block2">
+         <div class="button-block">
+           <div class="button1">
+             <button class="audiobtn" data-audio = "sounds/song1.mp3" data-video="video/video1.mp4">1</button>
+             <button class="audiobtn"
+             data-video="video/video2.mp4"
+             data-audio = "sounds/song2.mp3">2</button>
+             <button class="audiobtn" data-video="video/video3.mp4"
+              data-audio = "sounds/song3.mp3">3</button>
+           </div>
+           
+           <div class="button1">
+              <button class="audiobtn" data-video="video/video4.mp4"
+              data-audio = "sounds/song4.mp3">4</button>
+             <button class="audiobtn"
+             data-video="video/video5.mp4"
+             data-audio = "sounds/song5.mp3">5</button>
+             <button class="audiobtn"
+             data-video="video/video6.mp4"
+             data-audio = "sounds/song6.mp3">6</button>
+           </div>
+           <div class="button1">
+              <button class="audiobtn"
+              data-video="video/video7.mp4"
+              data-audio = "sounds/song7.mp3">7</button>
+             <button class="audiobtn"
+             data-video="video/video8.mp4"
+             data-audio = "sounds/song8.mp3">8</button>
+             <button class="audiobtn"
+             data-audio = "sounds/son_g9.mp3" data-video="video/KarthikGaj.mp4">9</button>
+           </div>
+            <div class="button1">
+             <button class="audiobtn" 
+             data-video="video/video10.mp4"
+             data-audio = "sounds/song10.mp3">*</button>
+             <button class="audiobtn"
+             data-video="video/video11.mp4"
+             data-audio = "sounds/song11.mp3">0</button>
+             <button class="audiobtn"
+             data-video="video/video12.mp4"
+             data-audio = "sounds/song12.mp3">#</button>
+           </div>
+           <audio id="audioplayer"></audio>
+         </div>
+      </div>
+    </div>
+   
+   
+     
+   </div>
+  </div>
+  
+  <script>
+   
+ const buttons = document.querySelectorAll(".audiobtn");
+ const audioplayer = document.getElementById("audioplayer");
+ const myvideo = document.getElementById("myvideo");
+ const image = document.querySelector('.image');
+ let currentSong = null;
+ let currentVideo = null;
+ myvideo.onended = function() {
+  image.style.display = "block";
+};
+
+ buttons.forEach((button) => {
+   button.addEventListener('click', function() {
+     const audioSrc = this.getAttribute("data-audio");
+     const videoSrc = this.getAttribute("data-video");
+     
+     if (audioSrc === currentSong && videoSrc === currentVideo) {
+       image.style.display = "block";
+       audioplayer.pause();
+       audioplayer.currentTime = 0;
+       if (videoSrc) {
+         myvideo.pause();
+         myvideo.src = "";
+       }
+       currentSong = null;
+       currentVideo = null;
+     } else {
+       audioplayer.src = audioSrc;
+       audioplayer.play();
+       currentSong = audioSrc;
+
+       if (videoSrc) {
+         myvideo.src = videoSrc;
+         myvideo.play();
+         image.style.display = "none"; 
+       } else {
+         myvideo.pause();
+         myvideo.src = "";
+         image.style.display = "block"; 
+       }
+
+       currentVideo = videoSrc;
+     }
+   });
+ });
+  </script>
+  </body>
+</html>
